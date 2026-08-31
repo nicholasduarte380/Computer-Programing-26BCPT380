@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{
+    int gross,discount,net;
+
+    printf("Enter gross sales: ");
+    scanf("%d",&gross);
+
+    printf("Enter discount: ");
+    scanf("%d",&discount);
+
+    net=gross-discount;
+
+    printf("Net Sales = %d",net);
+
+    return 0;
+}
