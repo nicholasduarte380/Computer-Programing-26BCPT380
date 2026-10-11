@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+    int amount;
+    int notes;
+
+    printf("Enter amount: ");
+    scanf("%d", &amount);
+
+    notes = amount / 500;
+    printf("500 rupees notes = %d\n", notes);
+    amount = amount % 500;
+
+    notes = amount / 200;
+    printf("200 rupees notes = %d\n", notes);
+    amount = amount % 200;
+
+    notes = amount / 100;
+    printf("100 rupees notes = %d\n", notes);
+    amount = amount % 100;
+
+    notes = amount / 50;
+    printf("50 rupees notes = %d\n", notes);
+    amount = amount % 50;
+
+    notes = amount / 20;
+    printf("20 rupees notes = %d\n", notes);
+    amount = amount % 20;
+
+    notes = amount / 10;
+    printf("10 rupees notes = %d\n", notes);
+    amount = amount % 10;
+
+    notes = amount / 5;
+    printf("5 rupees notes = %d\n", notes);
+    amount = amount % 5;
+
+    notes = amount / 2;
+    printf("2 rupees notes = %d\n", notes);
+    amount = amount % 2;
+
+    notes = amount / 1;
+    printf("1 rupee notes = %d\n", notes);
+
+    return 0;
+}
